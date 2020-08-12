@@ -10,7 +10,7 @@ int sub(int a, int b){
     return a-b;
 }
 
-int (*cal(int type))(int,int){
+int (*calculator(int type))(int,int){
     if(type == 1)
        return add;
     else if(type == 2)
@@ -22,9 +22,9 @@ int (*cal(int type))(int,int){
 int main()
 {
     int (*pfun)(int,int);
-    pfun = cal(1);
+    pfun = calculator(1);
     cout<<pfun(5,10)<<endl;
-    pfun = cal(2);
+    pfun = calculator(2);
     cout<<pfun(10,5)<<endl;
     
     return 0;
