@@ -1,0 +1,54 @@
+1) What the various data types in C?
+
+Commanly used data base are Char,Int, Float , Double.
+
+Other type of data tyres are:
+short int	
+unsigned short int	
+unsigned int	
+int	
+long int	
+unsigned long int	
+long long int	
+unsigned long long int	
+signed char	
+unsigned char	
+float	
+double	
+long double
+
+2) Size of integer, pointer ?
+
+The size of an int pointer is 8 bytes!
+
+
+4) Local variables and global variables?
+
+Local variable is declared inside a function whereas Global variable is declared outside the function. 
+Local variables are created when the function has started execution and is lost when the function terminates, on the other hand, Global variable is created as execution starts and is lost when the program ends.
+
+3) What is a system call, library call and their difference
+
+
+system calls are provided by the system and are executed in the system kernel. 
+They are entry points into the kernel and are therefore NOT linked into your program. 
+These are not portable calls. Library calls include the ANSI C standard library and are therefore portable. 
+These functions are linked into your program.
+
+Difference B/W Sys And Library Call?
+
+A system call is implemented in kernel space while a library call is implemented in the user space. 
+The main difference between System Call and Library Call is that System call is a request to the kernel to access a resource while library call is a request to use a function defined in a programming library
+
+4) Where is dynamic memory allocated from (I got a response saying it is from Stack)?
+
+you can allocate memory manually during run-time. 
+This is known as dynamic memory allocation in C programming. 
+To allocate memory dynamically, library functions are malloc() , calloc() , realloc() and free() are used. 
+These functions are defined in the <stdlib.
+
+
+5) How is stack used during program execution ?
+
+Stack, where automatic variables are stored, along with information that is saved each time a function is called. 
+Each time a function is called, the address of where to return to and certain information about the caller's environment, such as some of the machine registers, are saved on the stack.

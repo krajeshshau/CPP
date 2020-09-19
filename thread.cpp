@@ -25,6 +25,10 @@ public:
         cout<<"Assigning pointer to member function of a class as thread function:"<<_i<<endl;
     }
     
+    static void print(string const &str){
+        cout<<"Starting thread with static member function "<<str<<endl;
+    }
+    
     void set(int _data){
         lock_guard<mutex> lg(mut);
         data+= _data;
@@ -139,6 +143,10 @@ int main()  {
 /*    WorkerThread wth;
     int i = 10;
     thread th(&WorkerThread::display,&wth,i);
+    th.join();
+*/
+
+/*    thread th(&WorkerThread::print,"Rajesh");
     th.join();
 */
 
